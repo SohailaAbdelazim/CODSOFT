@@ -1,0 +1,271 @@
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /*background-color: #F4F6FC;*/
+}
+
+.header{
+    width: 100%;
+    height: 115vh;
+    padding: 20px 10%;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 150px;
+}
+
+nav .menu{
+    width: 50px;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+    margin-right: 150px;
+}
+
+nav ul li {
+    list-style: none;
+    display:inline-block;
+    margin: 10px 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #050A30;
+    font-weight: 700;
+    position: relative;
+    padding: 10px;
+}
+
+nav ul li a::before{
+    content: '';
+    width: 100%;
+    height: 0px;
+    background: #85c2eb;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: -5px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: height 0.5sec;
+}
+
+nav ul li a:hover::before{
+    height: 85px;
+
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col{
+    flex-basis: 50%;
+    position: relative;
+}
+
+.animation{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.col h1 {
+    margin-top: 180px;
+    font-size: 40px;
+    font-weight: 600;
+    animation: slideInFromLeft 0.5s ease-in;
+}
+
+.button1{
+    text-decoration: none;
+    padding: 18px 50px;
+    border-radius: 30px;
+    background: #85c2eb ;
+    display: inline-block;
+    color: #050A30;
+    font-weight: 700;
+    margin-top: 70px ;
+    box-shadow: 5px 8px 10px rgba(0,0,0,0.1);
+}
+ /* -------------------------------------------- section 2 --------------------------*/ 
+
+.about{
+    background-color: #F4F6FC ;
+    width: 100%;
+    height: 95vh;
+    padding: 20px 10%;
+}
+
+.about-text{
+    text-align: center;
+    color:#050A30;
+    font-weight: 450;
+    font-family: Nunito;
+}
+
+.about-pic{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    animation: slideInFromBottom 0.9s ease-in;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ /* -------------------------------------------- section 3 --------------------------*/ 
+.services{
+    width: 100%;
+    height: auto;
+    padding: 20px 10%;
+    margin-bottom: 32px;
+}
+.services .container{
+    padding: 32px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    grid-gap: 32px;
+}
+/* .services img{
+    width: 100%;
+    border-radius: 40px;
+    margin-top: -64px;
+    transition: 0.3s;
+} */
+
+.services img {
+    width: 100%;
+    border-radius: 40px;
+    transition: 0.3s;
+}
+
+
+.card{
+    background: #F4F6FC ;
+    padding: 32px;
+    border-radius:40px;
+}
+
+.card-text{
+    margin: 24px 16px 0 16px;
+}
+
+.card p{
+    margin: 16px 0 ;
+    font-size: 14.4px;
+    line-height: 27px;
+}
+
+.card:hover img{
+    transform: translateY(-32px);
+}
+
+.card a i {
+    margin: 0 8px ;
+}
+
+.container{
+    text-align: center;
+    color:#050A30;
+    font-weight: 400;
+    font-family: Nunito;
+}
+
+/** ------------------------------------------------- contact us -------------- **/ 
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col1{
+    flex-basis: 50%;
+    position: relative;
+}
+
+.contactUs{
+    background-color: #050A30 ;
+    width: 100%;
+    height: auto;
+    padding: 20px 10%;
+    position: absolute;
+}
+
+.col1 h1{
+    text-align: center;
+    color:#fff;
+    font-weight: 700;
+    font-family: Nunito;
+    margin-right: auto;
+}
+
+.contactUs img{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: left;
+}
+
+.contactUs:hover img{
+    transform: translateY(-32px);
+}
+
+.col1 h2{
+    text-align: left;
+    color:#85c2eb;
+    font-weight: 400;
+    font-family: Nunito;
+    margin-left: auto;
+}
+
+.col1 h3 {
+    text-align: left;
+    color:#fff;
+    font-weight: 200;
+    font-family: Nunito;
+    margin-left: auto;
+}
+
+.fa {
+    color: #fff;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+} 

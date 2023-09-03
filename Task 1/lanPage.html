@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel = "stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title> TechSolutions </title>
+    <script>
+        window.addEventListener('scroll', function() {
+            const section2 = document.getElementById('about');
+            const imageContainer = document.querySelector('.about-pic-container');
+    
+            const sectionRect = section2.getBoundingClientRect();
+    
+            // Check if the section is in the viewport
+            if (sectionRect.top < window.innerHeight) {
+                imageContainer.classList.add('about-pic');
+            }
+        });
+    </script>
+</head>
+
+<body>
+<section id="home">
+    <div class="header">
+        <nav>
+            <img src="./pic/logo.png" alt="logo" class ="logo">
+            <ul>
+                <li><a href="#home"> Home </a></li>
+                <li><a href="#about"> About us </a></li>
+                <li><a href="#service"> Services </a></li>
+                <li><a href="#contact"> Contact </a></li>
+            </ul>
+            <img src="./pic/menu.png" alt="menu" class ="menu">
+        </nav>
+        <div class="row">
+            <div class="col">
+            <h1> Tech Magic.. <br> Turning Ideas into Pixels and Lines!</h1>
+            <a href="#" class="button1"> Request a Solution </a>
+        </div>
+            <div class="col">
+                <img src="./pic/tech company.gif" alt="animation" class ="animation"> <a href="https://storyset.com/business"></a>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+
+<section class="about" id="about">
+    <div class="about-text">
+        <h3> About Us </h3>
+        <br>
+        <p> Discover seamless web solutions with TechSolutions.<br>
+             Our expert team transforms ideas into dynamic websites,<br>
+             leveraging cutting-edge technologies and elegant designs. <br>
+             From user-friendly interfaces to robust functionalities,we deliver <br>
+             tailored web development that boosts your online presence <br> and business growth. 
+             Elevate your digital strategy with TechSolutions!</p>
+    </div>
+    <div class="about-pic-container">
+        <img src="./pic/Programming-pana.png" alt="about-pic" class="about-pic" id="about-pic"> <a href="https://storyset.com/web"></a>
+    </div>
+</section>
+
+
+
+<section class="services" id="service">
+    <div class="container">
+       <br>
+       <h3> What we Offer </h3>  
+       <br>
+        <div class="card">
+            <img src="./pic/Website.png"  alt=" website createor"><a href="https://storyset.com/web"></a>
+            <div class="card-text">
+                <h3> WEBSITE DESIGN </h3>
+                <p> Having a website is more than just a checkbox your business needs to tick, it is a digital representation of your company and needs to be placed in the hands of professionals.</p>
+                <a href="#"> Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./pic/hosting.png"  alt="hosting"><a href="https://storyset.com/web"></a>
+            <div class="card-text">
+                <h3> DOMAIN AND HOSTING </h3>
+                <p> Every website needs to be registered and hosted on a server, and our end-to-end service provides the convenience of handling the entire process including setting up emails and renewals.</p>
+                <a href="#"> Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./pic/Content team.png"  alt=" content"> <a href="https://storyset.com/web"></a>
+            <div class="card-text">
+                <h3> CONTENT MANAGEMENT</h3>
+                <p> Our websites all include a Content Management System that would allow you to update certain content without any technical skillsets.Additionally, Content Management retainers are also available updating content regularly </p>
+                <a href="#"> Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="contact" id="contact">
+    <div class="contactUs">
+        <div class="row1">
+            <div class="col1">
+                <img src="./pic/contact.png" alt="contact"> <a href="https://storyset.com/business"></a>
+            </div>
+            <div class="col1">
+                <h1 class="text"> Contact Us </h1>  <br> <br> 
+                <h2 class="inner text"> Phone </h2> <br>
+                <h3 class="small text"> (+20) 01257007363</h3> <br>  
+                <h2 class="inner text"> Email </h2>  <br>
+                <h3 class="small text"> <a href="mailto:techsolutions@gmail.com">techsolutions@gmail.com </a> </h3>  <br>
+                <h2 class="inner text"> Social </h2>
+                <a href="#"> <i class="fa fa-facebook"></i></a> 
+                <a href="#"> <i class="fa fa-twitter"></i></a> 
+                <a href="#"> <i class="fa fa-instagram"></i></a> 
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
