@@ -1,2 +1,2 @@
 # CODSOFT
-Tasks required under CodSoft internship.
+Tasks required under CodSoft Web development internship.
